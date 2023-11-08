@@ -1,15 +1,11 @@
 .profileImg {
-  width: 35dvw;
-  height: 35dvw;
+  width: 5dvw;
+  height: 5dvw;
   display: block;
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid black;
-}
-
-body {
-  background-color: beige;
 }
 
 h1 {

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+  }
+  
+  .column {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .leftNavbar {
+    flex: 20%;
+    background-color: #808080;
+}
+  
+  .MainDataColumn {
+    flex: 50%;
+    background-color: white;
+  }
+  
+  .rightNavbar {
+    flex: 30%;
+    background-color:#808080;
+  }
