@@ -1,0 +1,73 @@
+.profileImg {
+  width: 7dvw;
+  height: 7dvw;
+  display: block;
+  margin: 50px auto 0; 
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-family: pt-sans, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-family: pt-sans, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  color: grey;
+}
+
+h3 {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  margin: 20px;
+}
+
+a.view-all-btn {
+  margin-left: auto;
+  font-family: pt-sans, sans-serif;
+  font-style: normal;
+  font-weight: 80;
+  font-size: 15px;
+  color: grey;
+}
+
+.section-title {
+  font-family: pt-sans, sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.left-bar-section {
+  margin-top: 40px;
+}
+
+.app-icon-div{
+  width: 60px; 
+  height: 60px; 
+  border-radius: 15px; 
+  align-items: center;
+  overflow: hidden; 
+  background-color: #355d8d;
+  display: grid;
+  place-items: center;
+}
+.application-icon{
+  width: 50px;
+  height: 50px;
+}
+
+#app-name{
+  margin-left: 20px;
+  align-self: center; 
+  color: #474a4d;
+}
