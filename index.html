@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Illia Branchuk</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/leftBar.css" />
     <link rel="stylesheet" href="css/core.css" />
+
   </head>
   <body>
-    <div class="container">
-      <div class="column leftNavbar"></div>
-      <div class="column MainDataColumn">
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block">   <p>Column 1</p> </div>
+      <div class="col-md-6  d-none d-md-block">
         <h3>
           I am a skilled and innovative Android developer with 12 of experience
           in designing and implementing high-quality mobile applications. I have
@@ -26,14 +29,14 @@
           latest technologies and best practices.
         </h3>
       </div>
-      <div class="column rightNavbar">
+      <div class="col-md-3 col-12 leftBar">
         <img class="profileImg" src="image/profile_photo.webp" />
         <h1>Illia Branchuk</h1>
         <h2>Senior Software Developer</h2>
 
         <div class="left-bar-section">
           <div class="righ-left-row-container">
-            <div class="section-title">My projects</div>
+            <div class="section-title">Projects</div>
             <a class="view-all-btn">View all &#8594;</a>
           </div>
           <div class="row-container">
@@ -49,6 +52,10 @@
         </div>
       </div>
     </div>
-    <script rel="stylesheet" src="screept.js"></script>
+
+      <!-- Include jQuery and Bootstrap JS from CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   </body>
 </html>
