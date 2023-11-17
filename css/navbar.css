@@ -1,0 +1,11 @@
+.navbar{
+    background-color: black;
+    height: 75px;
+    width: 100vw;
+}
+
+.navbar_icon{
+    width: 35px;
+    height: 25px;
+    margin-left: 20px;
+}
