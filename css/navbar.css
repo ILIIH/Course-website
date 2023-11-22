@@ -1,0 +1,16 @@
+.navbar{
+    background-color: black;
+    height: 75px;
+    width: 100vw;
+}
+
+.navbar_icon{
+    width: 35px;
+    height: 25px;
+    margin-left: 20px;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}

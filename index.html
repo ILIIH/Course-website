@@ -2,96 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <title>Illia Branchuk</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/leftBar.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
   </head>
   <body>
-    <img class="profileImg" src="image/profile_photo.webp" />
-    <h1>Illia Branchuk</h1>
-    <h2>Software developer apprenticeship</h2>
-    <h3>
-      I am a skilled and innovative Android developer with 12 of experience in
-      designing and implementing high-quality mobile applications. I have a
-      strong background in computer science and a passion for creating seamless
-      and intuitive user experiences on the Android platform. My expertise lies
-      in developing robust and scalable Android applications using the latest
-      technologies and best practices. I am a skilled and innovative Android
-      developer with [X years] of experience in designing and implementing
-      high-quality mobile applications. I have a strong background in computer
-      science and a passion for creating seamless and intuitive user experiences
-      on the Android platform. My expertise lies in developing robust and
-      scalable Android applications using the latest technologies and best
-      practices.
-    </h3>
+    <div class="navbar">
+      <img class="navbar_icon non_expanded" src="image/navbar_icon.png" />
+    </div>
 
-    <ul class="styled-list">
-      <li id="skils">Skills</li>
+    <div class="row">
+      <div class="col-md-3 d-none d-md-block"><p>Column 1</p></div>
+      <div class="col-md-6 d-none d-md-block">
+        <h3>
+          I am a skilled and innovative Android developer with 12 of experience
+          in designing and implementing high-quality mobile applications. I have
+          a strong background in computer science and a passion for creating
+          seamless and intuitive user experiences on the Android platform. My
+          expertise lies in developing robust and scalable Android applications
+          using the latest technologies and best practices. I am a skilled and
+          innovative Android developer with [X years] of experience in designing
+          and implementing high-quality mobile applications. I have a strong
+          background in computer science and a passion for creating seamless and
+          intuitive user experiences on the Android platform. My expertise lies
+          in developing robust and scalable Android applications using the
+          latest technologies and best practices.
+        </h3>
+      </div>
+      <div class="col-md-3 col-12 leftBar">
+        <img class="profileImg" src="image/profile_photo.webp" />
+        <h1>Illia Branchuk</h1>
+        <h2>Senior Software Developer</h2>
 
-      <ul id="skils_list" class="hidden_item">
-        <li>Proficient in Java and Kotlin programming languages</li>
-        <li>Expertise in Android Studio, Android SDK, and related tools</li>
-        <li>
-          Experience with RESTful APIs integration and third-party libraries
-        </li>
-        <li>
-          Strong knowledge of Android UI design principles, patterns, and best
-          practices
-        </li>
-        <li>Familiarity with Material Design guidelines</li>
-      </ul>
+        <div class="left-bar-section">
+          <div class="righ-left-row-container">
+            <div class="section-title">Projects</div>
+            <a class="view-all-btn">View all &#8594;</a>
+          </div>
+          <div class="row-container">
+            <div class="app-icon-div">
+              <img class="application-icon" src="image/android_icon.png" />
+            </div>
+            <a
+              id="app-name"
+              href="https://play.google.com/store/apps/details?id=com.nike.ntc"
+              >Nike Training Club</a
+            >
+          </div>
 
-      <li id="achivements">Key achivments</li>
+          <div class="row-container">
+            <div class="app-icon-div">
+              <img class="application-icon" src="image/web.png" />
+            </div>
+            <a id="app-name" href="https://transit9.com/product/">Transit9</a>
+          </div>
 
-      <ul id="achivements_list" class="hidden_item">
-        <li>
-          Developed and launched [number] Android apps on the Google Play Store,
-          collectively garnering over [number] downloads
-        </li>
-        <li>
-          Collaborated with cross-functional teams to deliver high-quality apps
-          within tight deadlines
-        </li>
-        <li>
-          Received [award/honor] for outstanding contribution to the development
-          team
-        </li>
-        <li>
-          Published articles and tutorials on Android development in [relevant
-          publications/websites]
-        </li>
-      </ul>
+          <div class="righ-left-row-container">
+            <div class="section-title">Skills</div>
+            <a class="view-all-btn">View all &#8594;</a>
+          </div>
 
-      <li id="work_expirence">Work expirence</li>
-      <ul id="work_expirence_list" class="hidden_item">
-        <li>
-          Collaborated with product managers and designers to develop
-          user-friendly Android applications
-        </li>
-        <li>
-          Implemented new app features and maintained existing codebase to
-          ensure optimal performance
-        </li>
-        <li>
-          Conducted code reviews and provided constructive feedback to team
-          members
-        </li>
-        <li>
-          Worked closely with QA teams to identify and fix bugs, ensuring smooth
-          app functionality
-        </li>
-      </ul>
+        <div class="row-container">
+            <div class="app-icon-div">
+              <img class="application-icon" src="image/android_icon.png" />
+            </div>
+            <a id="app-name">Android SDK</a>
+          </div>
 
-      <li id="education">Education</li>
+          <div class="row-container">
+            <div class="app-icon-div">
+              <img class="application-icon" src="image/react_icon.png" />
+            </div>
+            <a id="app-name" >React native</a>
+          </div>
 
-      <ul id="education_list" class="hidden_item">
-        <li>Bachelor's/Master's Degree in Computer Science</li>
-        <li>Bachelor's/Master's Degree in Computer Science</li>
-        <li>Bachelor's/Master's Degree in Computer Science</li>
-        <li>Bachelor's/Master's Degree in Computer Science</li>
-      </ul>
-    </ul>
+          <div class="row-container">
+            <div class="app-icon-div">
+              <img class="application-icon" src="image/java_icon.png" />
+            </div>
+            <a id="app-name" >Java</a>
+          </div>
 
-    <script rel="stylesheet" src="screept.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS from CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   </body>
 </html>
