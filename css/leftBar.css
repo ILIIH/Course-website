@@ -37,17 +37,17 @@ a.view-all-btn {
   margin-left: auto;
   font-family: pt-sans, sans-serif;
   font-style: normal;
-  font-weight: 80;
-  font-size: 15px;
+  font-weight: 0.8rem;
+  font-size: 0.6rem;
   color: grey;
-  margin-right: 25px;
+
 }
 
 .section-title {
   font-family: pt-sans, sans-serif;
   font-style: normal;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 12pt;
   margin-left: 25px;
 }
 
@@ -67,8 +67,8 @@ a.view-all-btn {
   place-items: center;
 }
 .application-icon{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 #app-name{
@@ -77,6 +77,16 @@ a.view-all-btn {
   color: #474a4d;
 }
 
-.leftBar{
-  background-color: ;
+@media (min-width: 767px) {
+  .leftBar{
+    background-color: rgba(255, 224, 61, 0.6); 
+  }
+  h2 {
+    text-align: center;
+    font-family: pt-sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+  }
 }
