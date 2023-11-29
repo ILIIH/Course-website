@@ -1,7 +1,10 @@
+@import 'constants/strings.css';
+
 .navbar{
     background-color: black;
     height: 75px;
     width: 100vw;
+    cursor: pointer;
 }
 
 .navbar_icon{

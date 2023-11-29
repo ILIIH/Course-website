@@ -1,7 +1,5 @@
-:root {
-  --primary_color: rgb(0, 0, 0);
-  --secondary_color: rgba(255, 224, 61, 0.6);
-}
+@import 'constants/colors.css';
+
 
 .profileImg {
   width: 25vh;
@@ -67,7 +65,7 @@ a.view-all-btn {
   border-radius: 30px; 
   align-items: center;
   overflow: hidden; 
-  background-color: var(--primary_color);
+  background-color:var(--primary_bar_color) ;
   display: grid;
   place-items: center;
 }
@@ -82,9 +80,9 @@ a.view-all-btn {
   color: #474a4d;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .leftBar{
-    background-color: var(--secondary_color); 
+    background-color: var(--secondary_bar_color); 
   }
   h2 {
     text-align: center;
@@ -92,6 +90,6 @@ a.view-all-btn {
     font-style: normal;
     font-weight: 100;
     font-size: 0.8rem;
-    color: var(--primary_color);
+    color: var(--primary_bar_color);
   }
 }
