@@ -1,0 +1,6 @@
+:root {
+    --primary_color: rgba(255, 224, 61);
+    --secondary_color: rgba(255, 253, 240);
+    --primary_bar_color: rgb(0, 0, 0);
+    --secondary_bar_color: rgba(255, 224, 61, 0.6);
+}
