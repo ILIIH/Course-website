@@ -25,10 +25,11 @@
 .righ-left-row-container {
   display: flex;
   justify-content: space-between; 
-  align-items: center; 
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  align-items: flex-end;
+
 }
 
 .row-container {
@@ -36,4 +37,11 @@
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  align-items: center; /* Center items vertically in the container */
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
 }
