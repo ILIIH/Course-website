@@ -1,0 +1,191 @@
+@import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+.course-icon{
+    width: 30vh;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    display: block;
+}
+
+.course-name {
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13pt;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.course-cost {
+    font-family: 'Inria Sans', sans-serif;  
+    font-weight: 250;
+    font-size: 13pt;
+    width: 40%;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: var(--primary_color);
+}
+
+.course-attributes{
+    text-align: justify ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: max-content;
+    font-family: 'Inria Sans', sans-serif;  
+    font-weight: 250;
+}
+
+.course-discription{
+    margin-top: 40px;
+    text-align: justify ;
+    margin-left:10%;
+    margin-right: 10%;
+    width:fit-content;
+    font-family: 'Inria Sans', sans-serif;  
+    font-weight: 250;
+}
+
+.course-tutor{
+    margin-top: 40px;
+    margin-left:10%;
+    margin-right: 10%;
+    border: 2px solid var(--primary_color);
+    height:fit-content;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-tutor-title{
+    font-family: 'Inria Sans', sans-serif;  
+    font-weight: 250;
+    text-align: center;
+    margin-top: 20px;;
+}
+
+.tutor-img {
+    width: 14vh;
+    height: 14vh;
+    display: block;
+    margin: 30px auto 0; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.tutor-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+  
+.tutor-info .left {
+    text-decoration: none;
+    color: var(--primary_bar_color);
+    margin-right: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: lighter;
+}
+  
+.tutor-info .right {
+    margin-left: 4%;
+    color: var(--primary_bar_color);
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.course-plan-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+}
+
+.plan-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:14%;
+    margin-right: 14%;
+    border: 6px solid var(--primary_color);
+    height:100px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-item-name {
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14;
+    width: 200px;
+}
+
+.arrow-icon {
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.registration-btn{
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 40px;
+    background-color: var(--primary_bar_color);
+    margin-bottom: 20px;
+}
+
+.registration-btn-float{
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 9999;
+    margin-top: 60px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 40px;
+    background-color: var(--primary_bar_color);
+    margin-bottom: 20px;
+}
+
+.registration-text{
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    font-size: 20px;
+    width:100%;
+    display: inline-block;
+}
+
+.registration-btn-icon{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+}

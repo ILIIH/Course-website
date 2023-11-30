@@ -1,4 +1,5 @@
 @import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
 
 .course-card {
     position: relative;
@@ -36,14 +37,19 @@
   
   .course-description .left {
     text-decoration: none;
+    color: var(--primary_bar_color);
     margin-right: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: lighter;
   }
   
   .course-description .right {
     margin-left: 2%;
+    color: var(--primary_bar_color);
     width: 10%;
-    font-family: pt-sans, sans-serif;
-    font-style: normal;
-    font-weight: 550;
-    font-size: 12pt;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
   }
