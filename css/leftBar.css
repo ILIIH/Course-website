@@ -1,5 +1,5 @@
 @import 'constants/colors.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
 
 .profileImg {
   width: 25vh;
@@ -11,45 +11,42 @@
   margin-bottom: 20px;
 }
 
-h1 {
+.tutor-name {
   margin-top: 10px;
   text-align: center;
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.4rem;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-h2 {
+.tutor-specialization {
   text-align: center;
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 0.8rem;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 0.7rem;
   color: grey;
 }
 
 h3 {
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   font-size: small;
   margin: 20px;
 }
 
 a.view-all-btn {
   margin-left: auto;
-  font-family: pt-sans, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   font-style: normal;
-  font-weight: 0.8rem;
+  font-weight: lighter;
   font-size: 0.8rem;
   color: grey;
 
 }
 
 .section-title {
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 550;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
   font-size: 12pt;
   margin-left: 25px;
 }
@@ -75,7 +72,10 @@ a.view-all-btn {
 }
 
 #app-name{
+  font-family: 'Inria Sans', sans-serif;
+  font-style: normal;
   margin-left: 20px;
+  font-size: 12pt;
   align-self: center; 
   color: #474a4d;
 }
@@ -86,7 +86,7 @@ a.view-all-btn {
   }
   h2 {
     text-align: center;
-    font-family: pt-sans, sans-serif;
+    font-family: 'Inria Sans', sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 0.8rem;
