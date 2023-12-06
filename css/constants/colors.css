@@ -3,4 +3,6 @@
     --secondary_color: rgba(255, 253, 240);
     --primary_bar_color: rgb(0, 0, 0);
     --secondary_bar_color: rgba(255, 224, 61, 0.6);
+    --left_bar_color: rgba(217, 217, 217, 0.38);
+    --unchused_bar_text: rgba(0, 0, 0, 0.5);
 }

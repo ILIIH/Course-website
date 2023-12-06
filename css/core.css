@@ -37,8 +37,20 @@
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  align-items: center; /* Center items vertically in the container */
+  align-items: center;
 }
 
 
+#main-content{
+  margin-top: -75px; /* Temporary decision must be changed after */
+
+  width: 104%; 
+  height: 110%; 
+}
+
+.col-lg-6 {
+  width: 50%;
+  float: left;
+  overflow: hidden; 
+}
 

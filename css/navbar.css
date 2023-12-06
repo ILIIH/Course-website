@@ -55,3 +55,10 @@
     text-align: center;
     margin: 20px;
 }
+
+@media (min-width: 992px) {
+    .navbar{
+      visibility: hidden;
+      display: none;
+    }
+}
