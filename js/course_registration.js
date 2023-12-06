@@ -12,21 +12,33 @@ function initMap() {
   });
 }
 
+function getFromLocalStorage(key) {
+  var storedValue = localStorage.getItem(key);
+  return storedValue ? JSON.parse(storedValue) : null;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+
+  var currentCourse =  getFromLocalStorage("CurrentCourse");
+
   var registrationBtn = document.querySelector(".registration-btn-float");
 
   registrationBtn.addEventListener("click", function () {
     var emailInput = document.getElementById("email");
-    var emailError = document.getElementById("emailError");
 
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailInput.value)) {
       alert("Please enter a valid email address");
     } else {
-      emailError.textContent = "";
+
+      var cart = getFromLocalStorage("CartArr")
+      if(cart == null) cart = [] 
+      cart.push(currentCourse)
+      localStorage.setItem("CartArr", JSON.stringify(cart));
+
       document.getElementsByClassName("registration-form")[0].submit();
     }
   });
 
-  initMap();
+
 });

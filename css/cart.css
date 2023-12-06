@@ -1,0 +1,54 @@
+@import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+.empty-cart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.empty-cart-img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.empty-cart-title{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.empty-cart-btn{
+    margin: 10px;
+    padding: 5px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 1px solid #000; 
+
+}
+
+a{
+    text-decoration: none; /* Remove underline */
+    color: #000;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .fullCart{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: lighter;
+  }
