@@ -1,95 +1,58 @@
 @import 'constants/colors.css';
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
 
-.profileImg {
-  width: 25vh;
-  height: 25vh;
-  display: block;
-  margin: 50px auto 0; 
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
+#leftBar{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+  background-color: var(--left_bar_color);
 }
 
-.tutor-name {
-  margin-top: 10px;
-  text-align: center;
-  font-family: 'Inria Sans', sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.tutor-specialization {
-  text-align: center;
-  font-family: 'Inria Sans', sans-serif;
-  font-weight: lighter;
-  font-size: 0.7rem;
-  color: grey;
-}
-
-h3 {
-  text-align: justify;
-  font-family: 'Inria Sans', sans-serif;
-  font-size: small;
-  margin: 20px;
-}
-
-a.view-all-btn {
-  margin-left: auto;
-  font-family: 'Inria Sans', sans-serif;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 0.8rem;
-  color: grey;
-
-}
-
-.section-title {
-  font-family: 'Inria Sans', sans-serif;
-  font-weight: bold;
-  font-size: 12pt;
-  margin-left: 25px;
-}
-
-.left-bar-section {
-  margin-top: 40px;
-}
-
-.app-icon-div{
-  width: 60px; 
-  height: 60px; 
-  margin-left: 25px;
-  border-radius: 30px; 
+.bar-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
   align-items: center;
-  overflow: hidden; 
-  background-color:var(--primary_bar_color) ;
-  display: grid;
-  place-items: center;
-}
-.application-icon{
-  width: 30px;
-  height: 30px;
+  margin-top: 30px;
 }
 
-#app-name{
+.choosed  .bar-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#courses{
+  margin-top: 100px;
+}
+
+.choosed .bar-item-name{
   font-family: 'Inria Sans', sans-serif;
-  font-style: normal;
-  margin-left: 20px;
-  font-size: 12pt;
-  align-self: center; 
-  color: #474a4d;
+  font-weight: bold;
+  font-size: 14pt;
 }
 
-@media (min-width: 992px) {
-  .leftBar{
-    background-color: var(--secondary_bar_color); 
-  }
-  h2 {
-    text-align: center;
-    font-family: 'Inria Sans', sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 0.8rem;
-    color: var(--primary_bar_color);
-  }
+.choosed .bar-item-name::after {
+  content: '';
+  display: inline-block;
+  width: 5px; 
+  height: 14px; 
+  background-color: var(--primary_color); 
+  margin-left: 30px; 
+}
+
+.unchoosed .bar-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  opacity: 0.5; 
+}
+
+.unchoosed .bar-item-name{
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-right: 30px;
+  color: var(--unchused_bar_text);
 }
