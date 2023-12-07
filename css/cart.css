@@ -43,12 +43,41 @@ a{
     display: inline-block;
   }
 
-  .fullCart{
+  .fullCart {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     text-align: center;
     align-items: center;
     margin-top: 30px;
     font-family: "Inria Sans", sans-serif;
     font-weight: lighter;
-  }
+}
+
+.item {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cart-img {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px; 
+}
+
+.total-text {
+    margin-top: 40px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 100px; 
+}

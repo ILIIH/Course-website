@@ -90,6 +90,6 @@ a.view-all-btn {
     font-style: normal;
     font-weight: 100;
     font-size: 0.8rem;
-    color: red;
+    color: var(--primary_bar_color);
   }
 }

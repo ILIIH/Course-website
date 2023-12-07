@@ -56,3 +56,7 @@
   margin-right: 30px;
   color: var(--unchused_bar_text);
 }
+
+.bar-item:hover{
+  cursor: pointer;
+}
