@@ -68,3 +68,20 @@ input {
   margin-top: 0px;
   font-size: 4pt;
 }
+
+
+@keyframes scaleAnimation {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.registration-btn-icon {
+  animation: scaleAnimation 3s ease-in-out infinite;
+}
