@@ -4,6 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var emptyCart = document.querySelector(".empty-cart");
   var fullCart = document.querySelector(".fullCart");
+  var fullPrice = document.querySelector(".total-text"); 
+
+  cart = cart.filter((value, index, self) => {
+      return self.indexOf(value) === index;
+  });
+
   if (cart.length > 0) {
     emptyCart.style.display = "none";
     emptyCart.style.visibility = "hidden";
@@ -30,22 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
       let textPriceDiv = document.createElement("div");
       textPriceDiv.textContent = "price : 33£";
 
+      let courseName = document.createElement("div");
+      courseName.textContent = item;
+
+      cartInfo.appendChild(courseName);
       cartInfo.appendChild(textDateDiv);
       cartInfo.appendChild(textPriceDiv);
-  
-      let divElement = document.createElement("div");
-      divElement.textContent = "course name : " + item;
+   
 
-      cartItemWrapper.appendChild(imgDiv);
       cartItemWrapper.appendChild(cartInfo);
-      cartItemWrapper.appendChild(divElement);
+      cartItemWrapper.appendChild(imgDiv);
 
       fullCart.appendChild(cartItemWrapper);
   });
-    let divElement = document.createElement("div");
-    divElement.textContent = "Total = " + 33*cart.length+"£";
-    divElement.classList.add("total-text");
-    fullCart.appendChild(divElement);
+    fullPrice.textContent = "TOTAL " + 33*cart.length+"£"; 
 
   } 
   else 
