@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="css/course_registration.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/core.css" />
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIzj6wUaJFfbXtJ1EoIO8IxbL8xC6vj0o&callback=initMap&libraries=maps,marker&v=beta"
+    ></script>
+
+    <script src="js/course_registration.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="navbar_icon navbar-closed" />
+      <div id="navbar_layout">
+        <a href="index.html">MY PROFILE</a>
+        <a href="courses.html">MY COURSES</a>
+        <a>CONTACTS</a>
+      </div>
+      <a href="cart.html"><img class="cart" src="image/cart.png" /></a>
+    </div>
+
+    <form class="registration-form">
+      <input type="text" id="email" name="email" placeholder="Email" />
+      <input type="text" id="fname" name="fname" placeholder="Full name" />
+      <input
+        type="date"
+        id="dbirth"
+        name="dbirth"
+        placeholder="Date of birth"
+      />
+      <input type="time" id="time" name="time" placeholder="Convinient time" />
+
+      <div class="map-title">Your location</div>
+
+      <div id="map" style="height: 400px"></div>
+
+      <div class="registration-btn-float">
+        <img class="registration-btn-icon" src="image/web.png" />
+        <div class="registration-text">REGISTER</div>
+      </div>
+    </form>
+
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

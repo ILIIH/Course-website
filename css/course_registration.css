@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap");
+@import "constants/colors.css";
+
+.registration-form {
+  margin-top: 25px;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 15px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: lighter;
+  width: 300px;
+}
+
+.map-title {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#map {
+  margin-top: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.registration-btn-float {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+  width: 300px;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 40px;
+  background-color: var(--primary_bar_color);
+  margin-bottom: 20px;
+}
+
+.registration-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.registration-text {
+  color: white;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 500;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  display: inline-block;
+}
+#emailError {
+  margin-left: 20px;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: lighter;
+  color: red;
+  margin-top: 0px;
+  font-size: 4pt;
+}

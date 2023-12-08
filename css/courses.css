@@ -1,0 +1,57 @@
+@import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+.course-card {
+    position: relative;
+    background-color: var(--secondary_color);
+    border: 10px solid var(--primary_color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 550px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 30%;
+  }
+  
+  .course-description {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; 
+
+  }
+  
+  .course-description .left {
+    text-decoration: none;
+    color: var(--primary_bar_color);
+    margin-right: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: lighter;
+  }
+  
+  .course-description .right {
+    margin-left: 2%;
+    color: var(--primary_bar_color);
+    width: 10%;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+  }
+
+  

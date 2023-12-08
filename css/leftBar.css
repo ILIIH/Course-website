@@ -1,97 +1,62 @@
-:root {
-  --primary_color: rgb(0, 0, 0);
-  --secondary_color: rgba(255, 224, 61, 0.6);
+@import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+#leftBar{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: end;
+  background-color: var(--left_bar_color);
 }
 
-.profileImg {
-  width: 25vh;
-  height: 25vh;
-  display: block;
-  margin: 50px auto 0; 
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-h1 {
-  margin-top: 10px;
-  text-align: center;
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.4rem;
-}
-
-h2 {
-  text-align: center;
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 0.8rem;
-  color: grey;
-}
-
-h3 {
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  margin: 20px;
-}
-
-a.view-all-btn {
-  margin-left: auto;
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 0.8rem;
-  font-size: 0.8rem;
-  color: grey;
-
-}
-
-.section-title {
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 550;
-  font-size: 12pt;
-  margin-left: 25px;
-}
-
-.left-bar-section {
-  margin-top: 40px;
-}
-
-.app-icon-div{
-  width: 60px; 
-  height: 60px; 
-  margin-left: 25px;
-  border-radius: 30px; 
+.bar-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
   align-items: center;
-  overflow: hidden; 
-  background-color: var(--primary_color);
-  display: grid;
-  place-items: center;
-}
-.application-icon{
-  width: 30px;
-  height: 30px;
+  margin-top: 30px;
 }
 
-#app-name{
-  margin-left: 20px;
-  align-self: center; 
-  color: #474a4d;
+.choosed  .bar-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
 
-@media (min-width: 767px) {
-  .leftBar{
-    background-color: var(--secondary_color); 
-  }
-  h2 {
-    text-align: center;
-    font-family: pt-sans, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 0.8rem;
-    color: var(--primary_color);
-  }
+#courses{
+  margin-top: 100px;
+}
+
+.choosed .bar-item-name{
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.choosed .bar-item-name::after {
+  content: '';
+  display: inline-block;
+  width: 5px; 
+  height: 14px; 
+  background-color: var(--primary_color); 
+  margin-left: 30px; 
+}
+
+.unchoosed .bar-icon{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  opacity: 0.5; 
+}
+
+.unchoosed .bar-item-name{
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-right: 30px;
+  color: var(--unchused_bar_text);
+}
+
+.bar-item:hover{
+  cursor: pointer;
 }

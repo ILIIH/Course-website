@@ -2,6 +2,7 @@
     background-color: black;
     height: 75px;
     width: 100vw;
+    cursor: pointer;
 }
 
 .navbar_icon{
@@ -21,6 +22,11 @@
     width: 35px;
 }
 
+.cart{
+    height: 20px;
+    width: 25px;
+    margin-right: 10px;
+}
 
 .row {
     margin-left: 0;
@@ -48,4 +54,11 @@
     color: white !important;
     text-align: center;
     margin: 20px;
+}
+
+@media (min-width: 992px) {
+    .navbar{
+      visibility: hidden;
+      display: none;
+    }
 }

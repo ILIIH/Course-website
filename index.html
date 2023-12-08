@@ -14,49 +14,56 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/leftBar.css" />
+    <link rel="stylesheet" href="css/rightBar.css" />
     <link rel="stylesheet" href="css/core.css" />
     <link rel="stylesheet" href="css/navbar.css" />
   </head>
   <body>
-    
-   
-
     <div class="navbar">
       <img class="navbar_icon navbar-closed" />
       <div id="navbar_layout">
-        <a>MY PROFILE</a>
-        <a>MY COURSES</a>
+        <a href="index.html">MY PROFILE</a>
+        <a href="courses.html">MY COURSES</a>
         <a>CONTACTS</a>
       </div>
+      <a href="cart.html"><img class="cart" src="image/cart.png" /></a>
     </div>
 
+    <!-- Right bar -->
     <div class="row">
-      <div class="col-md-3 d-none d-md-block"><p>Column 1</p></div>
-      <div class="col-md-6 d-none d-md-block">
-        <h3>
-          I am a skilled and innovative Android developer with 12 of experience
-          in designing and implementing high-quality mobile applications. I have
-          a strong background in computer science and a passion for creating
-          seamless and intuitive user experiences on the Android platform. My
-          expertise lies in developing robust and scalable Android applications
-          using the latest technologies and best practices. I am a skilled and
-          innovative Android developer with [X years] of experience in designing
-          and implementing high-quality mobile applications. I have a strong
-          background in computer science and a passion for creating seamless and
-          intuitive user experiences on the Android platform. My expertise lies
-          in developing robust and scalable Android applications using the
-          latest technologies and best practices.
-        </h3>
+      <div class="col-lg-3 d-none d-lg-block" id="leftBar">
+        <div class="bar-item choosed" id="courses">
+          <img class="bar-icon" src="image/home_icon.png" />
+          <div class="bar-item-name">General information</div>
+        </div>
+        <div class="bar-item unchoosed" id="projects">
+          <img class="bar-icon" src="image/works_icon.png" />
+          <div class="bar-item-name">My projects</div>
+        </div>
+        <div class="bar-item unchoosed" id="my_courses">
+          <img class="bar-icon" src="image/chip_icon.png" />
+          <div class="bar-item-name">My courses</div>
+        </div>
+        <div class="bar-item unchoosed" id="cart">
+          <img class="bar-icon" src="image/cart_black.png" />
+          <div class="bar-item-name">Cart</div>
+        </div>
       </div>
-      <div class="col-md-3 col-12 leftBar">
+      <!-- Central column -->
+      <div class="test col-lg-6 d-none d-lg-block">
+        <object id ="main-content"  type="text/html" data="courses.html"></object>
+      </div>
+
+      <!-- Left bar -->
+      <div class="col-lg-3 col-12 leftBar">
         <img class="profileImg" src="image/profile_photo.webp" />
-        <h1>Illia Branchuk</h1>
-        <h2>Senior Software Developer</h2>
+        <h1 class="tutor-name">Illia Branchuk</h1>
+        <h2 class="tutor-specialization">Senior Software Developer</h2>
 
         <div class="left-bar-section">
           <div class="righ-left-row-container">
             <div class="section-title">Projects</div>
-            <a class="view-all-btn">View all &#8594;</a>
+            <a href="my_projects.html" class="view-all-btn">View all &#8594;</a>
           </div>
           <div class="row-container">
             <div class="app-icon-div">
@@ -81,7 +88,7 @@
             <a class="view-all-btn">View all &#8594;</a>
           </div>
 
-        <div class="row-container">
+          <div class="row-container">
             <div class="app-icon-div">
               <img class="application-icon" src="image/android_icon.png" />
             </div>
@@ -92,24 +99,21 @@
             <div class="app-icon-div">
               <img class="application-icon" src="image/react_icon.png" />
             </div>
-            <a id="app-name" >React native</a>
+            <a id="app-name">React native</a>
           </div>
 
           <div class="row-container">
             <div class="app-icon-div">
               <img class="application-icon" src="image/java_icon.png" />
             </div>
-            <a id="app-name" >Java</a>
+            <a id="app-name">Java</a>
           </div>
-
         </div>
       </div>
     </div>
 
-    <script src="js/navbar.js" ></script>
-
-    <!-- Include jQuery and Bootstrap JS from CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/desktop-navbar.js"></script>
+   
   </body>
 </html>

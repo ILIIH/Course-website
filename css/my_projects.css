@@ -1,0 +1,66 @@
+@import 'constants/colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+.project-card {
+    position: relative;
+    background-color: var(--secondary_color);
+    border: 10px solid var(--primary_color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 550px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-photo{
+    width: auto;
+    height: 150px;
+    align-self: center;
+
+}
+
+.project-name{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.project-resp{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.project-tools{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tools-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tools-icon{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.tools-item{
+    margin: 10px;
+    background-color: var(--primary_bar_color);
+    border-radius: 10px;
+}
